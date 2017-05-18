@@ -1,0 +1,35 @@
+{
+    "name": "czechboy/easy-calculator",
+    "description": "Easy calcultor in PHP",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adam Žurek",
+            "email": "adam@jabko.net"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+    },
+    "require-dev": {
+        "mockery/mockery": "^0.9",
+        "nette/tester": "^1.7",
+        "phpstan/phpstan": "^0.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "CZechBoY\\EasyCalculator\\": "src/CZechBoY/EasyCalculator"
+        }
+    },
+    "autoload-dev": {
+        "classmap": ["tests"],
+        "files": [
+            "tests/Unit/Entities/NumeroTest.phpt",
+            "tests/Unit/MathExpressions/AddMathExpressionTest.phpt",
+            "tests/Unit/MathExpressions/MathExpressionParserTest.phpt",
+            "tests/Unit/OperationsSolvers/AddOperationSolverTest.phpt",
+            "tests/Unit/OperationsSolvers/OperationSolverResolverTest.phpt"
+        ]
+    }
+}
